@@ -1,0 +1,24 @@
+# OrcaTerm LightAI live relay (auto-configured from captured login state)
+server:
+  listen: 127.0.0.1
+  port: 8001
+  mock: false
+  cookie_env: LIGHTAI_COOKIE
+  cookie_file: "_cookie.txt"
+  bearer_file: "_bearer.txt"
+  user_id_env: LIGHTAI_USER_ID
+  api_key_env: RELAY_API_KEY
+
+models:
+  Hy4: "TokenHub/hunyuan-t1-latest"
+  Hy3: "TokenHub/hunyuan-turbos-latest"
+  Kimi-K3: "TokenHub/kimi-k2.5"
+  GLM-5.3-Flash: "TokenHub/glm-5.1"
+  GLM-5.3: "TokenHub/glm-5"
+  GLM-5.2: "TokenHub/glm-4.6"
+  DeepSeek-V4.1-Flash: "TokenHub/deepseek-v4-flash"
+  DeepSeek-V4-Flash: "TokenHub/deepseek-v4-flash"
+  Deepseek-V4-Pro: "TokenHub/deepseek-v4-pro"
+
+default_model: "TokenHub/deepseek-v4-pro"
+include_reasoning: true

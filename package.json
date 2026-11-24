@@ -1,0 +1,21 @@
+{
+  "name": "dsh-model-relay",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness tool plugin: manage the OrcaTerm OpenAI-compatible model relay (start/stop/status/chat).",
+  "type": "module",
+  "main": "index.mjs",
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "files": [
+    "index.mjs",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}

@@ -1,0 +1,10 @@
+# Credentials — never commit
+runtime/_bearer.txt
+runtime/_cookie.txt
+runtime/_dbg_profile/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+runtime/.venv/
